@@ -1,0 +1,94 @@
+body {
+	background-color: #46445e;
+}
+.wrapper {	
+	width: 298px;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #252432;
+    padding:24px;
+}
+
+h2 {
+	margin-top: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #efeff1;
+}
+
+#screen {
+	background-color: #dcdcdc;
+	margin-bottom: 24px;
+	height:auto;
+	border-radius: 5px;
+	text-align: right;
+	padding: 10px 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#input {
+	font-size: 46px;
+	line-height: 46px;
+	margin-bottom: 5px;
+	letter-spacing: 1.5px;	
+}
+
+#calChain {
+	font-size: 14px;
+	color: #8f8f90;
+	letter-spacing: 1.5px;
+	/*#777778*/
+}
+
+button {
+	width: 64px;
+	height: 45px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #363548;
+	color: #efeff1;
+	border-radius: 5px;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
+	text-align: center;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+button:active {
+	background-color: #555460;
+
+}
+
+.lastBtn {
+	margin-right: 0;
+}
+
+#num0 {
+	/*width: 147.5px;*/
+	width: 142px;
+}
+
+.inline {
+	display:inline;
+	float:right;
+}
+
+.inline button {
+	width: 64px;
+	height: 100px;
+}
+
+#AC, #CE {
+	background-color: #f69a4a;
+	color: #2b2a39;
+}
+
+#AC:active, #CE:active {
+	background-color: #c47b3b;
+}
