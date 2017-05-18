@@ -1,6 +1,6 @@
 # Build a JavaScript Calculator
 
-**Objective:** Build a Codepen.io app that is functional.
+**Objective:** Build a [CodePen.io](https://codepen.io/#) app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/rLJZrA/
 #### User story:
   1. I can add, subtract, multiply and divide two numbers.
   2. I can clear the input field with a clear button.
