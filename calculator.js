@@ -86,13 +86,13 @@ function displayMultiplicationSymbol() {
 function displayOperator() {
 	for (var i = 0; i < operatorBtns.length; i++) {
 		operatorBtns[i].addEventListener("click", function() {
-			if (operatorCheck(input.textContent) === true) {
+			if ( operatorCheck(inputLog) ) {
 				inputLog += this.value;
 				input.textContent = this.textContent;
 				calChain.textContent = inputLog;
 				displayMultiplicationSymbol();
-
-				console.log(inputLog);
+				// console.log("input text content: " + input.textContent);
+				// console.log("input log: " + inputLog);
 			}			
 		});
 	}
@@ -100,14 +100,13 @@ function displayOperator() {
 
 // prevents more than one operator appear next to each other
 function operatorCheck(str) {
-	var valid = true;
-	// if str contains any charater in the operator list, then the function returns invalid, which will disable the operator buttons
-	for (var i = 0; i < operatorList.length; i++) {
-		if (str.indexOf(operatorList[i]) !== -1) {
-			valid = false;
-		}
+	// if the last character of inputLog is NOT an operator, return true to allow user to click on any operator button
+	// otherwise, disable all operator buttons  
+	var lastCharacter = str[str.length - 1];
+
+	if (lastCharacter !== "-" && lastCharacter !== "+" && lastCharacter !== "*" && lastCharacter !== "/") {
+		return true;
 	}
-	return valid;
 }
 
 // rounds the float number to the maximum decimal places that the screen digit limit allows
